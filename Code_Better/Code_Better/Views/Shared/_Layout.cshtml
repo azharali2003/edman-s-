@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .navBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top:2rem;
+            margin-left: 8rem;
+            margin-right: 8rem;
+            font-size:2rem;
+        }
+        .lastNav {
+            display: flex;           
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-size: 1.5rem;
+        }
+        a{
+            text-decoration:none;            
+        }
+        *{
+            list-style:none;
+        }
+        .Contant{
+            /*width:100vw;*/
+            height:580px;
+        /*    border:1px;
+            border-color:black;
+            border-style:solid;*/
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            
+        }
+        .Fdiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 2rem;
+        }
+        .AFContant {
+           /* width: 100vw;*/
+            height: 300px;
+           /* border: 1px;
+            border-style: solid;
+            border-color: black;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /*gap: 6.5rem;*/
+            font-size: 3rem;
+            color:azure;
+            background-color:dimgrey;
+        }
+        .AF2Contant {
+            width: 80vw;
+            height: 500px;
+         /*   border: 1px;
+            border-style: solid;
+            border-color: black;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .knoMoreBtn{
+            background-color:red;
+            border-radius:1rem;
+            border-style:none;
+            color:azure;
+            padding:7px;
+        }
+        .AF3Contant {
+            margin-top: 2rem;
+            margin-left: 6rem;
+            margin-right: 6rem;
+          /*  border: 1px;
+            border-style: solid;
+            border-color: black;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;3
+        }
+        .AF4Contant {
+            background-color:dimgray;
+           
+            /*border: 1px;
+            border-style: solid;
+            border-color: black;*/
+            display: flex;          
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .whyUs {
+            background-color: dimgray;
+            color:azure;
+        }
+        .sectHeadindDiv h2 {
+            font-size: 3rem;
+            font-style: italic;
+        }
+
+
+        .insideForm {
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            gap:2rem;    
+           
+        }
+        footer{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .foot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:3rem;
+            font-size: 1.2rem;
+        }
+        .foot1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:12rem;
+        }
+        #start{
+            color:red;
+        }
+        #btn1{
+            background-color:red;
+            color:azure;
+            border-radius:12px;
+            border-style:none;
+        }
+        #btn {
+            background-color: red;
+            color: azure;
+            border-radius: 12px;
+            border-style: none;
+            padding: 12px;
+        }
+        .whyUs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+        }
+        body{
+            background-color:#FFE9EC;
+        }
+        .nav{
+           
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            
+            padding:15px;
+            background-color:#212529;
+            color:azure;
+            font-size:1.5rem;
+        }
+        .writing{
+            font-size:2rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo1">
+            <img src="~/image/whatappGroup95@2x.png" width="40px"/>
+            <img src="~/image/insta_Group95@2x.png" width="40px"/>
+            <img src="~/image/fb_Group95@2x.png" width="40px"/>
+        </div>
+        <div>
+            <img src="~/image/rtGroup137.png"/>
+            <img src="~/image/Iconfeather-mail.png"/>
+            <span>contact@codebetter.in</span>
+        </div>
+        <div>
+            <img src="~/image/Iconfeather-phone-call.png" />
+            <span>
+                +91 88230 75444,+91 99939 28766
+            </span>
+            <img src="~/image/lftGroup138.png" />
+        </div>
+        <div><button id="btn">Enquiry Now</button></div>
+
+    </nav>
+
+    <nav class="navBar">
+        <div>
+            <img src="~/image/navLogo.svg" />
+        </div>
+
+
+        <ul class="lastNav">
+            <li>Home</li>
+            <li>About US</li>
+            <li>Course</li>
+            <li>Internship</li>
+            <li>Placement</li>
+            <li>Testimonials</li>
+            <li>Branches</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+        </ul>
+        </div>
+    </nav>
+    <hr />
+    <div class="Contant">
+        <div class="Fdiv">
+            <div id="start">Start Your Favorite Course</div>
+            <div>Dedicated Lab Support And Guidance</div>
+            <div> <button id="btn1">View Course</button></div>
+
+        </div>
+        <div class="Sdiv"> <img src="~/image/reactJs.png" />
+      @*  <img src="~/image/rtGroup137.png"/>*@
+        </div>
+
+        <div class="Tdiv"> <img src="~/image/Asset 1.png" width="620px" />       
+        </div>
+        <div class="Fdiv"><img src="~/image/ratings.png" />
+        <img src="~/image/redHeadarrow.png"/></div>
+       
+    </div>
+
+    <div>
+        <ul class="AFContant">
+            <li>10+ Year Experience</li>
+            <li>27 Courses </li>
+            <li>5000+ Trainee</li>
+            <li>1000+ Palcement</li>
+
+        </ul>
+    </div>
+    <div class="AF2Contant">
+
+        <div class="sectHeadindDiv">
+            <h2>Welcome to Codebetter</h2>
+            <div class="headUnderLine"></div>
+        </div>
+        <div class="paraDiv">
+            <p>
+                CodeBetter is an IT training and placement institute in Indore. CodeBetter has a unique teaching style that
+                has made thousands of students get their desired IT jobs. CodeBetter helps the students to get well trained and
+                start their IT career within a time span of 3-4 months.
+            </p>
+            <p>
+                CodeBetter provides master level training on courses like FullStack Development,
+                ReactJS, Angular, iOS App Development, Android App Development, AI and Data Science , Flutter, C/C++, Data
+                Structure etc.
+            </p>
+        </div>
+        <div>
+            <button class="knoMoreBtn">Know More</button>
+        </div>
+    </div>
+    <div class="whyUs">why Join Us?
+    <img src="~/image/whyJoinIcoArrow.png"/></div>
+
+
+    <div class="AF3Contant">
+
+        <img src="~/image/why_join_us.png" alt="">
+
+        <div class="writing">
+            <p><img src="./images/icons/Icon awesome-pen.png" alt=""> Training team with IT industry experience </p>
+            <hr class="redUnderline">
+            <p><img src="./images/icons/Icon awesome-pen.png" alt=""> Small batch size </p>
+            <hr class="redUnderline">
+            <p><img src="./images/icons/Icon awesome-pen.png" alt=""> Minimal theory; Maximum hands-on </p>
+            <hr class="redUnderline">
+            <p>
+                <img src="./images/icons/Icon awesome-pen.png" alt=""> State of the art lab for development &amp; testing
+            </p>
+            <hr class="redUnderline">
+            <p><img src="./images/icons/Icon awesome-pen.png" alt=""> Best IT Internship in Indore </p>
+            <hr class="redUnderline">
+            <p><img src="./images/icons/Icon awesome-pen.png" alt=""> iOS Training Institute in Indore</p>
+            <hr class="redUnderline">
+            <p><img src="./images/icons/Icon awesome-pen.png" alt=""> IT Training in Indore with 200% placement </p>
+        </div>
+    </div>
+    
+    <div class="AF4Contant">
+
+        <div class="whyUs">Quick Inquiry</div>
+
+
+        <div class="writing4">
+            <form>
+                <div class="insideForm">
+                    <input type="text" class="name" placeholder="Your full Name" />
+                    <input type="text" class="email" placeholder="Your Email Address" />
+                    <input type="text" class="number" placeholder="Your Phone Number" />
+                    <input type="text" class="message" placeholder="Enter your Message" />
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+        <img src="~/image/enquiry_page.png" alt="">
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+
+        <footer>
+            <div class="foot">
+                <div class="logoft">
+                    <img src="~/image/navLogo.svg" />                   
+                </div>
+                
+                <div class="instalogo">Contact With US
+                <img src="~/image/whatappGroup95@2x.png" width="40px"/>
+                <img src="~/image/insta_Group95@2x.png" width="40px"/>
+                <img src="~/image/fb_Group95@2x.png" width="40px"/>
+                </div>
+                <div>
+                    <img src="~/image/Iconfeather-mail.png"/>
+                    <span>contact@codebetter.in</span>
+                </div>
+                <div><img src="~/image/Iconfeather-phone-call.png"/>
+                <span>8584965125,2569874513</span></div>
+            </div>
+            <hr />
+            <div class="foot1">
+
+                <div>* Terms & conditions apply.</div>
+                <div>All logos & content are trademarks/ copyrights of their respective owners.</div>
+                <div>© 2023 codebetter.in</div>
+
+            </div>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
